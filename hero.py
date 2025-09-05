@@ -14,9 +14,9 @@ class Hero:
     """
     
     def __init__(self, name):
-        self.name = "67 Savior"
-        self.health = 6767676767676767416741
-        self.attack_power = random.randint(20, 25)
+        self.name = name
+        self.health = 67416741
+        self.attack_power = random.randint(41, 67)
     
 
     def strike(self):
@@ -24,7 +24,7 @@ class Hero:
     
     def receive_damage(self, damage):
         self.health = self.health - damage
-        print(f"{self.name} recieve {damage} damage. Health is now {self.damage}.")
+        print(f"{self.name} recieve {damage} damage. Health is now {self.health}.")
 
     def is_alive(self):
         return self.health > 0 
