@@ -40,6 +40,16 @@ def main():
     # Determine outcome
     if hero.is_alive():
         print(f"\nThe hero has defeated all the goblins! ༼ ᕤ◕◡◕ ༽ᕤ")
+<<<<<<< Updated upstream
+=======
+        print("boss fight time")
+        MrBoss = boss("Boss Guy")
+        while hero.is_alive() and MrBoss.is_alive():
+            damage = hero.strike()
+            MrBoss.take_damage(damage)
+            damage = MrBoss.attack()
+            hero.receive_damage(damage)
+>>>>>>> Stashed changes
     else:
         print(f"\nThe hero has been defeated. Game Over. (｡•́︿•̀｡)")
 
