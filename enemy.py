@@ -14,7 +14,7 @@ class enemy:
     def __init__(self, name):
         self.name = "Number one opp"
         self.health = 6767
-        self.attack_power = random.randint(5, 15)
+        self.attack_power = random.randint(41, 67)
 
     def attack(self):
         return random.randint(1, self.attack_power)
